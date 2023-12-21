@@ -1,10 +1,10 @@
-import './App.css';
-import Login from './login/Login';
+import "./App.css";
+import Showads from "./showads/Showads";
 
 function App() {
   return (
     <>
-      <Login />
+      <Showads />
     </>
   );
 }

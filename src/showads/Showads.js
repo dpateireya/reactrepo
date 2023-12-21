@@ -12,7 +12,7 @@ const getdata = {
   head: "",
   details: "",
 };
-function Login() {
+function Showads() {
   const [islogin, setLogin] = useState(false);
   const [filldata, setFillData] = useState(initdata);
 
@@ -68,4 +68,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Showads;
