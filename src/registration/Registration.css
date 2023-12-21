@@ -1,0 +1,33 @@
+.textbox_style {
+  height: 30px;
+  width: 250px;
+  margin: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightsalmon;
+}
+
+.label_style {
+  height: 25px;
+  width: 160px;
+  font-size: larger;
+  font-weight: bolder;
+  margin: 3px;
+  color: moccasin;
+  margin-top: 10px;
+}
+
+.button_style {
+  width: 150px;
+  height: 40px;
+  font-size: large;
+  margin: 5px;
+  color: orangered;
+  font-weight: bolder;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightsalmon;
+  background-color: bisque;
+}

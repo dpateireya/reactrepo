@@ -1,10 +1,10 @@
 import "./App.css";
-import Showads from "./showads/Showads";
+import Registration from "./registration/Registration";
 
 function App() {
   return (
     <>
-      <Showads />
+      <Registration />
     </>
   );
 }
