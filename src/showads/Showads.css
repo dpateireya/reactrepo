@@ -1,0 +1,30 @@
+.textbox_style {
+  height: 30px;
+  width: 250px;
+  margin: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: brown;
+}
+
+.label_style {
+  height: 25px;
+  width: 150px;
+  font-size: larger;
+  font-weight: bolder;
+  margin: 3px;
+  color: white;
+  margin-top: 10px;
+}
+
+.button_style {
+  width: 150px;
+  height: 40px;
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: pink;
+}

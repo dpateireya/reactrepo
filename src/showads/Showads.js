@@ -1,5 +1,6 @@
 import Adsbox from "../adsbox/Adsbox";
 import Adsdata from "../adsbox/AdsData";
+import "./Showads.css";
 const { useState } = require("react");
 
 const initdata = [
@@ -45,24 +46,42 @@ function Showads() {
       {islogin ? (
         <>
           <div>
-            <button onClick={logoutsub}>Hide AdsBox</button>
+            <button className="button_style" onClick={logoutsub}>
+              Hide AdsBox
+            </button>
           </div>
           {filldata.map((obj) => {
             return <Adsbox head={obj.head} details={obj.details} />;
           })}
-          <button onClick={fillDatasub}> Fill Data</button>
+          <button className="button_style" onClick={fillDatasub}>
+            Fill Data
+          </button>
           <br />
           <div>
-            <input name="head" onChange={getdatasub} />
+            <div className="label_style"> Heading :</div>
+            <input
+              className="textbox_style"
+              name="head"
+              onChange={getdatasub}
+            />
           </div>
           <div>
-            <input name="details" onChange={getdatasub} />
+            <div className="label_style"> Details :</div>
+            <input
+              className="textbox_style"
+              name="details"
+              onChange={getdatasub}
+            />
           </div>
           <br />
-          <button onClick={addDatasub}> Add Data</button>
+          <button className="button_style" onClick={addDatasub}>
+            Add Data
+          </button>
         </>
       ) : (
-        <button onClick={authsub}> Show Adsbox</button>
+        <button className="button_style" onClick={authsub}>
+          Show Adsbox
+        </button>
       )}
     </>
   );
