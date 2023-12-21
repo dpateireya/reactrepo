@@ -1,16 +1,16 @@
-import Adsbox from '../adsbox/Adsbox';
-import Adsdata from '../adsbox/AdsData';
-const { useState } = require('react');
+import Adsbox from "../adsbox/Adsbox";
+import Adsdata from "../adsbox/AdsData";
+const { useState } = require("react");
 
 const initdata = [
   {
-    head: '',
-    details: '',
+    head: "",
+    details: "",
   },
 ];
 const getdata = {
-  head: '',
-  details: '',
+  head: "",
+  details: "",
 };
 function Login() {
   const [islogin, setLogin] = useState(false);
@@ -45,20 +45,24 @@ function Login() {
       {islogin ? (
         <>
           <div>
-            <button onClick={logoutsub}>Logout</button>
+            <button onClick={logoutsub}>Hide AdsBox</button>
           </div>
           {filldata.map((obj) => {
             return <Adsbox head={obj.head} details={obj.details} />;
           })}
           <button onClick={fillDatasub}> Fill Data</button>
           <br />
-          <input name="head" onChange={getdatasub} /><br/>
-          <input name="details" onChange={getdatasub} />
+          <div>
+            <input name="head" onChange={getdatasub} />
+          </div>
+          <div>
+            <input name="details" onChange={getdatasub} />
+          </div>
           <br />
           <button onClick={addDatasub}> Add Data</button>
         </>
       ) : (
-        <button onClick={authsub}> Login</button>
+        <button onClick={authsub}> Show Adsbox</button>
       )}
     </>
   );
