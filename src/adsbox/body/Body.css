@@ -1,0 +1,8 @@
+.body_style {
+  background-color: lightgray;
+  padding: 10px;
+  margin: 10px;
+  text-align: justify;
+  border-radius: 15px;
+  height: 100px;
+}
