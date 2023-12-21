@@ -22,9 +22,11 @@
   width: 150px;
   height: 40px;
   font-size: large;
+  margin: 5px;
   font-weight: bolder;
   border-radius: 10px;
   border-style: solid;
   border-width: 2px;
   border-color: pink;
+  background-color: bisque;
 }
