@@ -1,4 +1,23 @@
-.textbox_style {
+.reg_form_style {
+  width: 270px;
+  padding: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightsalmon;
+}
+
+.reg_textbox_style {
+  height: 30px;
+  width: 250px;
+  margin: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightsalmon;
+  text-transform: capitalize;
+}
+.reg_textemail_style {
   height: 30px;
   width: 250px;
   margin: 3px;
@@ -8,7 +27,7 @@
   border-color: lightsalmon;
 }
 
-.label_style {
+.reg_label_style {
   height: 25px;
   width: 160px;
   font-size: larger;
@@ -16,10 +35,11 @@
   margin: 3px;
   color: moccasin;
   margin-top: 10px;
+  text-shadow: 2px 2px black;
 }
 
-.button_style {
-  width: 150px;
+.reg_button_style {
+  width: 120px;
   height: 40px;
   font-size: large;
   margin: 5px;
