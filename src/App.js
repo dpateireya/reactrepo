@@ -1,10 +1,10 @@
 import "./App.css";
-import Showads from "./showads/Showads";
+import Timer from "./timer/Timer";
 
 function App() {
   return (
     <>
-      <Showads />
+      <Timer />
     </>
   );
 }
