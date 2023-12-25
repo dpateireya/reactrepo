@@ -1,10 +1,10 @@
 import "./App.css";
-import Timer from "./timer/Timer";
+import Todo from "./todo/todo1/Todo";
 
 function App() {
   return (
     <>
-      <Timer />
+      <Todo />
     </>
   );
 }
