@@ -1,6 +1,7 @@
 import "./Todo.css";
 import Heading from "../../adsbox/heading/Heading";
 import { useState } from "react";
+import Todolist from "./Todolist";
 
 function Todo() {
   let [Items, setItems] = useState("");
@@ -18,12 +19,10 @@ function Todo() {
   //   setListItems(ListItems.filter((pre) => pre !== val));
   // }
 
-  function removeItemsub(e) {
-    let val = e.target.value;
-
+  function removeItemsub(id) {
     setListItems((preListItems) => {
       return preListItems.filter((item, index) => {
-        return item !== val;
+        return index !== id;
       });
     });
   }
@@ -54,12 +53,12 @@ function Todo() {
             <ul>
               {ListItems.map((item, index) => {
                 return (
-                  <li id={index} key={index}>
-                    <button onClick={removeItemsub} id={index} value={item}>
-                      x
-                    </button>
-                    <span>{item}</span>
-                  </li>
+                  <Todolist
+                    id={index}
+                    key={index}
+                    item={item}
+                    onSelect={removeItemsub}
+                  />
                 );
               })}
             </ul>
