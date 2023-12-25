@@ -1,0 +1,75 @@
+.todo_form_style {
+  padding: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightsalmon;
+  background-color: cadetblue;
+  margin-bottom: 10px;
+}
+.todo_textbox_style {
+  height: 30px;
+  width: 250px;
+  margin: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: brown;
+}
+
+.todo_label_style {
+  height: 25px;
+  font-weight: bolder;
+  color: darkblue;
+  text-align: center;
+  margin: 30px 0;
+  font-size: xx-large;
+}
+
+.todo_button_style {
+  height: 40px;
+  width: 40px;
+  font-size: large;
+  margin: 5px;
+  font-weight: bolder;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: pink;
+  background-color: bisque;
+}
+
+div ul {
+  background-color: white;
+  margin-left: 5px;
+  padding: 10px;
+  list-style-type: none;
+  border-radius: 15px;
+  width: 235px;
+  min-height: 50px;
+}
+ul li {
+  margin: 5px;
+  background-color: blanchedalmond;
+  padding: 5px;
+  font-size: large;
+  font-weight: bolder;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+ul li span {
+  margin-left: 20px;
+}
+ul li button {
+  margin: 0 10px;
+  background-color: aquamarine;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border-width: 1px;
+}
+
+ul li button :hover {
+  color: yellow;
+}

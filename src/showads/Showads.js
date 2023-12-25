@@ -2,6 +2,7 @@ import Adsbox from "../adsbox/Adsbox";
 import Adsdata from "../adsbox/AdsData";
 import "./Showads.css";
 const { useState } = require("react");
+let isShowdata = false;
 
 const initdata = [
   {
@@ -24,8 +25,10 @@ function Showads() {
   function logoutsub() {
     setFillData(initdata);
     setLogin(false);
+    isShowdata = false;
   }
   function fillDatasub() {
+    isShowdata = true;
     setFillData(Adsdata);
   }
 
@@ -50,9 +53,10 @@ function Showads() {
               Hide AdsBox
             </button>
           </div>
-          {filldata.map((obj) => {
-            return <Adsbox head={obj.head} details={obj.details} />;
-          })}
+          {isShowdata &&
+            filldata.map((obj) => {
+              return <Adsbox head={obj.head} details={obj.details} />;
+            })}
           <button className="button_style" onClick={fillDatasub}>
             Fill Data
           </button>
