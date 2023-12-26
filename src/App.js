@@ -1,10 +1,10 @@
 import "./App.css";
-import Todo from "./todo/todo1/Todo";
+import Incredecre from "./incredecre/Incredecre";
 
 function App() {
   return (
     <>
-      <Todo />
+      <Incredecre />
     </>
   );
 }
