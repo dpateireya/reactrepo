@@ -1,10 +1,10 @@
+import Accordion from "./accordion/Accordion";
 import "./App.css";
-import Incredecre from "./incredecre/Incredecre";
 
 function App() {
   return (
     <>
-      <Incredecre />
+      <Accordion />
     </>
   );
 }

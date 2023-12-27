@@ -1,0 +1,60 @@
+.accor_form_style {
+  padding: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightsalmon;
+  background-color: cadetblue;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.accor_list_style {
+  padding: 3px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: darkgreen;
+  background-color: cadetblue;
+  margin: 10px;
+  padding: 5px;
+  text-align: left;
+}
+.accor_list_head_style {
+  border-style: solid;
+  border-width: 2px;
+  border-color: sienna;
+  margin: 5px 5px 0px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: middle;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: darkslategrey;
+}
+
+.accor_list_parag_style {
+  border-style: solid;
+  border-width: 2px;
+  border-color: sienna;
+  font-size: small;
+  border-top: 0;
+  margin: 0 5px;
+  padding: 10px;
+  text-transform: none;
+}
+
+.accor_label_style {
+  text-align: justify;
+}
+
+.accor_button_style {
+  width: 30px;
+  height: 30px;
+  font-size: large;
+  margin: 0px 10px;
+  font-weight: bolder;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: pink;
+  background-color: transparent;
+}
