@@ -1,7 +1,7 @@
 import Adsbox from "../adsbox/Adsbox";
 import Adsdata from "../adsbox/AdsData";
 import "./Showads.css";
-const { useState } = require("react");
+import { useState } from "react";
 let isShowdata = false;
 
 const initdata = [
@@ -16,32 +16,39 @@ const getdata = {
 };
 function Showads() {
   const [islogin, setLogin] = useState(false);
-  const [filldata, setFillData] = useState(initdata);
+  const [filldata, setFillData] = useState([]);
 
+  // display ads box
   function authsub() {
     setLogin(true);
   }
 
+  // reset all ads box value
   function logoutsub() {
     setFillData(initdata);
     setLogin(false);
     isShowdata = false;
   }
+
+  // dispaly addata.js file object value
   function fillDatasub() {
     isShowdata = true;
     setFillData(Adsdata);
   }
 
+  //set value in onchange event
   function getdatasub(e) {
     let name = e.target.name;
     let value = e.target.value;
     getdata[name] = value;
   }
 
+  // pass the value in usestate
   function addDatasub() {
     setFillData((obj) => {
       return [...obj, getdata];
     });
+    isShowdata = true;
   }
 
   return (

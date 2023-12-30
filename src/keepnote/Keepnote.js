@@ -1,31 +1,44 @@
 import "./Keepnote.css";
 import Heading from "../adsbox/heading/Heading";
+import Addnote from "./Addnote";
+import Shownote from "./Shownote";
+import { useState } from "react";
 
 function Keepnote() {
+  const [ListNote, setListNote] = useState([]);
+
+  //add note in list of listnote hooksvariable
+  function addNoteData(note) {
+    setListNote((obj) => {
+      return [...obj, note];
+    });
+  }
+
+  //delete note by noteid in list of listnote hookvariable
+  function deleteNoteData(id) {
+    setListNote((obj) => {
+      return obj.filter((item, index) => {
+        return index !== id;
+      });
+    });
+  }
   return (
     <>
       <div className="keep_form_style">
         <Heading head="Keep Note App" />
-        <div className="keep_list_style">
-          <input className="keep_text_style" placeholder="Title" />
-          <textarea
-            rows="6"
-            className="keep_textarea_style"
-            placeholder="type description ...."
-          />
-          <button className="keep_button_style">Add Note</button>
-        </div>
-        <div className="keep_list_style">
-          <div className="keep_list_head_style">
-            <span className="keep_label_style">HI</span>
-          </div>
-          <div className="keep_list_parag_style">
-            <p className="keep_label_style">this is a topic</p>
-          </div>
-          <div style={{ textAlign: "right" }}>
-            <button className="keep_del_button_style">-</button>
-          </div>
-        </div>
+
+        <Addnote onAddNote={addNoteData} />
+        {ListNote.map((item, index) => {
+          return (
+            <Shownote
+              key={index}
+              id={index}
+              title={item.title}
+              details={item.details}
+              onDeleteNote={deleteNoteData}
+            />
+          );
+        })}
       </div>
     </>
   );
