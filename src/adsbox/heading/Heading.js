@@ -1,7 +1,7 @@
-import './Heading.css';
+import "./Heading.css";
 
-function Heading(prop) {
-  return <div className="head_style">{prop.head}</div>;
+function Heading(props) {
+  return <div className="head_style">{props.head}</div>;
 }
 
 export default Heading;

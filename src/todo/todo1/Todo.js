@@ -36,7 +36,7 @@ function Todo() {
         <div>
           <Heading head="To do Array List" />
         </div>
-        <div className="todo_form_style">
+        <div className="todo_form2_style">
           <div>
             <input
               className="todo_textbox_style"
@@ -50,7 +50,7 @@ function Todo() {
             </button>
           </div>
           <div>
-            <ul>
+            <ul className="todo_ul">
               {ListItems.map((item, index) => {
                 return (
                   <Todolist

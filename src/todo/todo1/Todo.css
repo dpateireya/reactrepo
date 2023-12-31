@@ -6,7 +6,20 @@
   border-color: lightsalmon;
   background-color: cadetblue;
   margin-bottom: 10px;
+  width: 30%;
+  text-align: center;
 }
+.todo_form2_style {
+  padding: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightsalmon;
+  background-color: cadetblue;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 .todo_textbox_style {
   height: 30px;
   width: 250px;
@@ -39,16 +52,16 @@
   background-color: bisque;
 }
 
-div ul {
+.todo_ul {
   background-color: white;
-  margin-left: 5px;
   padding: 10px;
   list-style-type: none;
   border-radius: 15px;
-  width: 235px;
   min-height: 50px;
+  text-align: left;
 }
-ul li {
+
+.todo_ul_li {
   margin: 5px;
   background-color: blanchedalmond;
   padding: 5px;
@@ -57,10 +70,11 @@ ul li {
   text-transform: capitalize;
   border-radius: 10px;
 }
-ul li span {
+
+.todo_ul_li_span {
   margin-left: 20px;
 }
-ul li button {
+.todo_ul_li_button {
   margin: 0 10px;
   background-color: aquamarine;
   border-radius: 15px;
@@ -68,8 +82,4 @@ ul li button {
   height: 30px;
   font-size: 20px;
   border-width: 1px;
-}
-
-ul li button :hover {
-  color: yellow;
 }

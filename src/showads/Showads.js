@@ -18,7 +18,7 @@ function Showads() {
   const [islogin, setLogin] = useState(false);
   const [filldata, setFillData] = useState([]);
 
-  // display ads box
+  // display ads   box
   function authsub() {
     setLogin(true);
   }

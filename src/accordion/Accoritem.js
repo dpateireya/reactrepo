@@ -9,7 +9,7 @@ function Accoritem(props) {
     <>
       <div className="accor_list_head_style">
         <button onClick={showData} className="accor_button_style">
-          {Isshow ? "-" : "+"}
+          {Isshow ? " - " : " + "}
         </button>
         <span className="accor_label_style">{props.question}</span>
       </div>

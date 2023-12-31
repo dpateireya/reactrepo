@@ -12,7 +12,7 @@ function Shownote(props) {
       </div>
       <div style={{ textAlign: "right" }}>
         <button onClick={deleteData} className="keep_del_button_style">
-          -
+          {" - "}
         </button>
       </div>
     </div>

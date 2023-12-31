@@ -25,7 +25,7 @@ function Keepnote() {
   return (
     <>
       <div className="keep_form_style">
-        <Heading head="Keep Note App" />
+        <Heading head="Keep Note App " />
 
         <Addnote onAddNote={addNoteData} />
         {ListNote.map((item, index) => {

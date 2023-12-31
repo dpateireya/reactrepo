@@ -13,7 +13,7 @@ function Incredecre() {
       if (val > 0) {
         return val - 1;
       } else {
-        alert("Sorry, Zero limit reached");
+        alert("Sorry, Zero limit reached.");
         return 0;
       }
     });

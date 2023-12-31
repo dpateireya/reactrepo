@@ -1,13 +1,13 @@
-import Heading from './heading/Heading';
-import Body from './body/Body';
-import './Adsbox.css';
+import Heading from "./heading/Heading";
+import Body from "./body/Body";
+import "./Adsbox.css";
 
-function Adsbox(prop) {
+function Adsbox(props) {
   return (
     <>
       <div className="ads_style">
-        <Heading head={prop.head} />
-        <Body details={prop.details} />
+        <Heading head={props.head} />
+        <Body details={props.details} />
       </div>
     </>
   );

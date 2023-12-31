@@ -34,11 +34,11 @@ function Timer() {
     <>
       <div className="timer_form_style">
         <div>
-          <Heading head="Timer exercise" />
+          <Heading head="Timer Exercise" />
         </div>
         <div className="timer_form_style">
           <div>
-            <Heading head="Click and showtime" />
+            <Heading head="Click and Showtime" />
           </div>
           <div className="timer_label_style">
             <label> {showtime}</label>

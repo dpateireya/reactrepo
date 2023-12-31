@@ -43,7 +43,7 @@ function Addnote(props) {
         <textarea
           name="details"
           value={Note.details}
-          rows="6"
+          rows="4"
           className="keep_textarea_style"
           placeholder="take a note ...."
           onChange={getNoteData}

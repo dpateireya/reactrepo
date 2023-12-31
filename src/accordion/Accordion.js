@@ -7,7 +7,7 @@ function Accordion() {
   return (
     <>
       <div className="accor_form_style">
-        <Heading head="Accordion List" />
+        <Heading head="Accordion List " />
         <div className="accor_list_style">
           {Apidata.map((item, index) => {
             return (

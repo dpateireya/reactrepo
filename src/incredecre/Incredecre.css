@@ -6,6 +6,7 @@
   border-color: lightsalmon;
   background-color: cadetblue;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .incre_label_style {
@@ -28,8 +29,4 @@
   border-width: 2px;
   border-color: pink;
   background-color: bisque;
-}
-
-div {
-  text-align: center;
 }
