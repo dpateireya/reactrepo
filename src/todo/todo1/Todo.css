@@ -6,11 +6,10 @@
   border-color: lightsalmon;
   background-color: cadetblue;
   margin-bottom: 10px;
-  width: 30%;
   text-align: center;
 }
 .todo_form2_style {
-  padding: 3px;
+  padding: 10px;
   border-radius: 10px;
   border-style: solid;
   border-width: 2px;
@@ -21,7 +20,7 @@
 }
 
 .todo_textbox_style {
-  height: 30px;
+  height: 40px;
   width: 250px;
   margin: 3px;
   border-radius: 10px;
@@ -59,6 +58,8 @@
   border-radius: 15px;
   min-height: 50px;
   text-align: left;
+  width: 300px;
+  margin: auto;
 }
 
 .todo_ul_li {
