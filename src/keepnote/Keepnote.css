@@ -1,0 +1,85 @@
+.keep_form_style {
+  padding: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightsalmon;
+  background-color: cadetblue;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.keep_list_style {
+  padding: 3px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: darkgreen;
+  background-color: cadetblue;
+  margin: 10px;
+  padding: 5px;
+  text-align: left;
+}
+.keep_list_head_style {
+  margin: 5px 5px 0px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: darkslategrey;
+}
+
+.keep_list_parag_style {
+  font-size: small;
+  margin: 0 5px;
+}
+
+.keep_label_style {
+  text-align: justify;
+}
+
+.keep_button_style {
+  height: 40px;
+  width: 120px;
+  font-size: large;
+  margin: 10px;
+  font-weight: bolder;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: pink;
+  background-color: bisque;
+}
+
+.keep_del_button_style {
+  height: 40px;
+  width: 40px;
+  font-size: large;
+  margin: 10px;
+  font-weight: bolder;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: pink;
+  background-color: bisque;
+  text-align: center;
+}
+
+.keep_text_style {
+  height: 30px;
+  width: 90%;
+  margin: 4px;
+  padding: 10px;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: brown;
+}
+.keep_textarea_style {
+  width: 90%;
+  margin: 3px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: brown;
+}

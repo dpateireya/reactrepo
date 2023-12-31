@@ -1,0 +1,11 @@
+.ads_style {
+  background-color: antiquewhite;
+  padding: 2px;
+  margin: 5px;
+  border-radius: 15px;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+  width: 370px;
+  text-align: left;
+}

@@ -1,0 +1,40 @@
+.timer_form_style {
+  padding: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightsalmon;
+  background-color: cadetblue;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.timer_textbox_style {
+  height: 30px;
+  width: 250px;
+  margin: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: brown;
+}
+
+.timer_label_style {
+  height: 25px;
+  font-weight: bolder;
+  color: darkblue;
+  text-align: center;
+  margin: 30px 0;
+  font-size: xx-large;
+}
+
+.timer_button_style {
+  height: 40px;
+  font-size: large;
+  margin: 5px;
+  font-weight: bolder;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: pink;
+  background-color: bisque;
+}

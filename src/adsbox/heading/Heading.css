@@ -1,0 +1,11 @@
+.head_style {
+  background-color: brown;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: x-large;
+  color: white;
+  font-weight: bold;
+  text-justify: inter-word;
+}

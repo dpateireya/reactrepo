@@ -1,0 +1,85 @@
+.todo_form_style {
+  padding: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightsalmon;
+  background-color: cadetblue;
+  margin-bottom: 10px;
+  width: 30%;
+  text-align: center;
+}
+.todo_form2_style {
+  padding: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightsalmon;
+  background-color: cadetblue;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.todo_textbox_style {
+  height: 30px;
+  width: 250px;
+  margin: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: brown;
+}
+
+.todo_label_style {
+  height: 25px;
+  font-weight: bolder;
+  color: darkblue;
+  text-align: center;
+  margin: 30px 0;
+  font-size: xx-large;
+}
+
+.todo_button_style {
+  height: 40px;
+  width: 40px;
+  font-size: large;
+  margin: 5px;
+  font-weight: bolder;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: pink;
+  background-color: bisque;
+}
+
+.todo_ul {
+  background-color: white;
+  padding: 10px;
+  list-style-type: none;
+  border-radius: 15px;
+  min-height: 50px;
+  text-align: left;
+}
+
+.todo_ul_li {
+  margin: 5px;
+  background-color: blanchedalmond;
+  padding: 5px;
+  font-size: large;
+  font-weight: bolder;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+
+.todo_ul_li_span {
+  margin-left: 20px;
+}
+.todo_ul_li_button {
+  margin: 0 10px;
+  background-color: aquamarine;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border-width: 1px;
+}
