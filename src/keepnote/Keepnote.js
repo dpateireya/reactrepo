@@ -22,9 +22,14 @@ function Keepnote() {
       });
     });
   }
+
+  function hideElement() {
+    console.log("ok");
+  }
+
   return (
     <>
-      <div className="keep_form_style">
+      <div className="keep_form_style" onClick={hideElement}>
         <Heading head="Keep Note App" />
 
         <Addnote onAddNote={addNoteData} />
