@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/reactrepo/static/css/main.842883df.css",
+    "main.js": "/reactrepo/static/js/main.b46b4366.js",
+    "index.html": "/reactrepo/index.html",
+    "main.842883df.css.map": "/reactrepo/static/css/main.842883df.css.map",
+    "main.b46b4366.js.map": "/reactrepo/static/js/main.b46b4366.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.842883df.css",
+    "static/js/main.b46b4366.js"
+  ]
+}
