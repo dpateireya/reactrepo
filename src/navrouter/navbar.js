@@ -11,32 +11,32 @@ const Navbar = () => {
           </Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="/accordion">
+          <Link class="nav-link" to="accordion">
             Accordion
           </Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="/showads">
+          <Link class="nav-link" to="showads">
             Ads Box
           </Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="/incredecre">
+          <Link class="nav-link" to="incredecre">
             Incre/Decrement
           </Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="/timer">
+          <Link class="nav-link" to="timer">
             Timer
           </Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="/todo">
+          <Link class="nav-link" to="todo">
             Todo List
           </Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="/keepnote">
+          <Link class="nav-link" to="keepnote">
             Keep Note
           </Link>
         </li>
