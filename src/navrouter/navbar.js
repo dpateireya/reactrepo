@@ -1,10 +1,9 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <ul class="nav justify-content-center">
+      <ul class="nav nav-pills nav-fill">
         <li class="nav-item">
           <Link class="nav-link" to="/">
             Home
