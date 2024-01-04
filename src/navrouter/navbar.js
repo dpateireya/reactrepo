@@ -3,39 +3,39 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <ul class="nav nav-pills nav-fill">
-        <li class="nav-item">
-          <Link class="nav-link" to="/">
+      <ul className="nav nav-pills nav-fill">
+        <li className="nav-item">
+          <Link className="nav-link" to="/">
             Home
           </Link>
         </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="accordion">
+        <li className="nav-item">
+          <Link className="nav-link" to="accordion">
             Accordion
           </Link>
         </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="showads">
+        <li className="nav-item">
+          <Link className="nav-link" to="showads">
             Ads Box
           </Link>
         </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="incredecre">
+        <li className="nav-item">
+          <Link className="nav-link" to="incredecre">
             Incre/Decrement
           </Link>
         </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="timer">
+        <li className="nav-item">
+          <Link className="nav-link" to="timer">
             Timer
           </Link>
         </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="todo">
+        <li className="nav-item">
+          <Link className="nav-link" to="todo">
             Todo List
           </Link>
         </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="keepnote">
+        <li className="nav-item">
+          <Link className="nav-link" to="keepnote">
             Keep Note
           </Link>
         </li>
