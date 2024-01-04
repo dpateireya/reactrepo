@@ -5,6 +5,7 @@ const Nopage = () => {
   let [Message, setMessage] = useState("visually-hidden");
 
   useEffect(() => {
+    document.title = `Clicked hit - ${Show}`;
     setMessage("");
     setTimeout(() => {
       setMessage("visually-hidden");
