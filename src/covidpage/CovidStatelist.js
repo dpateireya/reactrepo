@@ -1,6 +1,6 @@
 import React from "react";
 
-const CovidState = (props) => {
+const CovidStatelist = (props) => {
   return (
     <>
       <tr>
@@ -15,4 +15,4 @@ const CovidState = (props) => {
   );
 };
 
-export default CovidState;
+export default CovidStatelist;

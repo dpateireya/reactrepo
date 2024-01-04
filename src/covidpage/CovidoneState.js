@@ -30,7 +30,7 @@ const CovidoneState = () => {
     <>
       <div className="text-center m-0">
         <div>
-          <p className="h1">Covid 19 Corona Virus Tracker</p>
+          <p className="h1">India's State Covid 19 Corona Virus Tracker</p>
         </div>
         <div className="w-100 h-25">
           <span className="fw-bolder fs-3 m-sm-2">Select State :</span>
@@ -50,24 +50,24 @@ const CovidoneState = () => {
       </div>
       <div>
         <div className="covid_body_style">
-          <label className="covid_label_style">State : {Data.loc}</label>
+          <label className="covid_label_style">State {Data.loc}</label>
         </div>
         <div className="covid_body_style">
           <label className="covid_label_style">
-            Case Confirmed : {Data.confirmedCasesIndian}
+            Case Confirmed {Data.confirmedCasesIndian}
           </label>
         </div>
         <div className="covid_body_style">
           <label className="covid_label_style">
-            Discharge : {Data.discharged}
+            Discharge {Data.discharged}
           </label>
         </div>
         <div className="covid_body_style">
-          <label className="covid_label_style">Deaths : {Data.deaths}</label>
+          <label className="covid_label_style">Deaths {Data.deaths}</label>
         </div>
         <div className="covid_body_style">
           <label className="covid_label_style">
-            Total Case : {Data.totalConfirmed}
+            Total Case {Data.totalConfirmed}
           </label>
         </div>
         <div className="covid_body_style">

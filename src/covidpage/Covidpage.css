@@ -6,14 +6,13 @@
   border-radius: 15px;
   min-height: 110px;
   text-align: center;
-  width: 200px;
+  width: 150px;
   float: left;
 }
 
 .covid_label_style {
   height: 25px;
-  width: 150px;
-  font-size: larger;
+  font-size: medium;
   font-weight: bolder;
   margin: 3px;
   color: brown;
