@@ -1,25 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Covidpage.css";
-const CovidoneState = () => {
-  const [StateData, setStateData] = useState([]);
+const CovidoneState = (props) => {
   const [Data, setData] = useState([]);
-
-  useEffect(() => {
-    getCovidData();
-  }, []);
-
-  const getCovidData = async () => {
-    const res = await fetch("https://api.rootnet.in/covid19-in/stats/latest");
-    const item = await res.json();
-    const data = await item.data.regional;
-    setStateData(data);
-  };
 
   const setSelectData = (e) => {
     let value = e.target.value;
-
     setData((pre) => {
-      pre = StateData.filter((item, index) => {
+      pre = props.data.filter((item, index) => {
         return value === item.loc;
       });
       return pre[0];
@@ -38,7 +25,7 @@ const CovidoneState = () => {
             className="dropdown-center w-25 form-control-lg collapse-horizontal"
             onChange={setSelectData}
           >
-            {StateData.map((item, index) => {
+            {props.data.map((item, index) => {
               return (
                 <option key={index} value={item.loc}>
                   {item.loc}

@@ -15,27 +15,30 @@ const Covidpage = () => {
   const [Country, setCountry] = useState([]);
   const [State, setState] = useState([]);
 
-  const getCovidData = async () => {
-    const item = await fetch("https://api.rootnet.in/covid19-in/stats/latest");
-    const data = await item.json();
-    Initcountry.lastRefreshed = data.lastRefreshed;
-    Initcountry.confirmedCasesIndian = data.data.summary.confirmedCasesIndian;
-    Initcountry.deaths = data.data.summary.deaths;
-    Initcountry.discharged = data.data.summary.discharged;
-    Initcountry.total = data.data.summary.total;
-    setCountry(Initcountry);
-    setState(data.data.regional);
-  };
   // total india covid19 patient
   useEffect(() => {
     getCovidData();
   }, []);
 
+  const getCovidData = async () => {
+    const res = await fetch("https://api.rootnet.in/covid19-in/stats/latest");
+    const item = await res.json();
+    Initcountry.lastRefreshed = item.lastRefreshed;
+    const data = await item.data.summary;
+    const state = await item.data.regional;
+    Initcountry.confirmedCasesIndian = data.confirmedCasesIndian;
+    Initcountry.deaths = data.deaths;
+    Initcountry.discharged = data.discharged;
+    Initcountry.total = data.total;
+    setCountry(Initcountry);
+    setState(state);
+  };
+
   return (
     <>
       <div class="container">
         <div class="row">
-          <CovidoneState />
+          <CovidoneState data={State} />
         </div>
         <div class="row">
           <CovidCountry data={Country} />
