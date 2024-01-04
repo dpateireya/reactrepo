@@ -8,6 +8,7 @@ import Incredecre from "../incredecre/Incredecre";
 import Timer from "../timer/Timer";
 import Todo from "../todo/todo1/Todo";
 import Nopage from "./Nopage";
+import Covidpage from "../covidpage/Covidpage";
 
 const RoutePage = () => {
   return (
@@ -22,6 +23,7 @@ const RoutePage = () => {
           <Route path="timer" element={<Timer />} />
           <Route path="todo" element={<Todo />} />
           <Route path="keepnote" element={<Keepnote />} />
+          <Route path="covid19" element={<Covidpage />} />
           <Route path="*" element={<Nopage />} />
         </Routes>
       </BrowserRouter>

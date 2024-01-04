@@ -39,6 +39,11 @@ const Navbar = () => {
             Keep Note
           </Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="covid19">
+            Covid-19
+          </Link>
+        </li>
       </ul>
     </>
   );
