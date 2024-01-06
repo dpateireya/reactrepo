@@ -9,6 +9,9 @@ import Timer from "../timer/Timer";
 import Todo from "../todo/todo1/Todo";
 import Nopage from "./Nopage";
 import Covidpage from "../covidpage/Covidpage";
+import Home from "../crudoperation/Home";
+import Create from "../crudoperation/Create";
+import Update from "../crudoperation/Update";
 
 const RoutePage = () => {
   return (
@@ -24,6 +27,9 @@ const RoutePage = () => {
           <Route path="todo" element={<Todo />} />
           <Route path="keepnote" element={<Keepnote />} />
           <Route path="covid19" element={<Covidpage />} />
+          <Route path="home" element={<Home />} />
+          <Route path="create" element={<Create />} />
+          <Route path="update/:id" element={<Update />} />
           <Route path="*" element={<Nopage />} />
         </Routes>
       </BrowserRouter>
