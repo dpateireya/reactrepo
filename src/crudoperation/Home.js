@@ -9,10 +9,19 @@ const Home = () => {
   useEffect(() => {
     getData();
   }, []);
+
   const getData = async () => {
-    await axios.get("http://localhost:3030/users").then((res) => {
-      setApidata(res.data);
-    });
+    await axios
+      .get("http://localhost:3030/users")
+      .then((res) => {
+        setApidata(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        // setApidata({ name: "", email: "" });
+      });
   };
 
   const handleDelete = (id) => {
@@ -45,34 +54,36 @@ const Home = () => {
             </tr>
           </thead>
           <tbody>
-            {Apidata.map((item, index) => {
-              return (
-                <>
-                  <tr id={index} key={index}>
-                    <td>{item.id}</td>
-                    <td>{item.name}</td>
-                    <td>{item.email}</td>
-                    <td>
-                      <Link
-                        to={"/update/" + item.id}
-                        className="btn btn-warning me-1"
-                      >
-                        Update
-                      </Link>
-                      <button
-                        className="btn btn-danger me-1"
-                        onClick={() => {
-                          handleDelete(item.id);
-                        }}
-                      >
-                        Delete
-                      </button>
-                      <button className="btn btn-info me-1">Read</button>
-                    </td>
-                  </tr>
-                </>
-              );
-            })}
+            {Apidata.length > 0
+              ? Apidata.map((item, index) => {
+                  return (
+                    <>
+                      <tr id={index} key={index}>
+                        <td>{item.id}</td>
+                        <td>{item.name}</td>
+                        <td>{item.email}</td>
+                        <td>
+                          <Link
+                            to={"/update/" + item.id}
+                            className="btn btn-warning me-1"
+                          >
+                            Update
+                          </Link>
+                          <button
+                            className="btn btn-danger me-1"
+                            onClick={() => {
+                              handleDelete(item.id);
+                            }}
+                          >
+                            Delete
+                          </button>
+                          <button className="btn btn-info me-1">Read</button>
+                        </td>
+                      </tr>
+                    </>
+                  );
+                })
+              : null}
           </tbody>
         </table>
       </div>
