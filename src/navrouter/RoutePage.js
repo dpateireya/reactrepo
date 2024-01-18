@@ -16,7 +16,7 @@ import Update from "../crudoperation/Update";
 const RoutePage = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/reactrepo">
         <Navbar />
         <Routes>
           <Route path="/" index element={<Welcome />} />
