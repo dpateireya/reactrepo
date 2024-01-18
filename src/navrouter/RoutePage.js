@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./navbar";
 import Welcome from "./Welcome";
 import Accordion from "../accordion/Accordion";
@@ -16,23 +16,21 @@ import Update from "../crudoperation/Update";
 const RoutePage = () => {
   return (
     <>
-      <BrowserRouter basename="/reactrepo">
-        <Navbar />
-        <Routes>
-          <Route path="/" index element={<Welcome />} />
-          <Route path="accordion" element={<Accordion />} />
-          <Route path="showads" element={<Showads />} />
-          <Route path="incredecre" element={<Incredecre />} />
-          <Route path="timer" element={<Timer />} />
-          <Route path="todo" element={<Todo />} />
-          <Route path="keepnote" element={<Keepnote />} />
-          <Route path="covid19" element={<Covidpage />} />
-          <Route path="home" element={<Home />} />
-          <Route path="create" element={<Create />} />
-          <Route path="update/:id" element={<Update />} />
-          <Route path="*" element={<Nopage />} />
-        </Routes>
-      </BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" index element={<Welcome />} />
+        <Route path="accordion" element={<Accordion />} />
+        <Route path="showads" element={<Showads />} />
+        <Route path="incredecre" element={<Incredecre />} />
+        <Route path="timer" element={<Timer />} />
+        <Route path="todo" element={<Todo />} />
+        <Route path="keepnote" element={<Keepnote />} />
+        <Route path="covid19" element={<Covidpage />} />
+        <Route path="home" element={<Home />} />
+        <Route path="create" element={<Create />} />
+        <Route path="update/:id" element={<Update />} />
+        <Route path="*" element={<Nopage />} />
+      </Routes>
     </>
   );
 };
