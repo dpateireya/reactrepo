@@ -12,6 +12,9 @@ import Covidpage from "../covidpage/Covidpage";
 import Home from "../crudoperation/Home";
 import Create from "../crudoperation/Create";
 import Update from "../crudoperation/Update";
+import House from "../nestapi/House";
+import Add from "../nestapi/Add";
+import Modify from "../nestapi/Modify";
 
 const RoutePage = () => {
   return (
@@ -29,6 +32,10 @@ const RoutePage = () => {
         <Route path="home" element={<Home />} />
         <Route path="create" element={<Create />} />
         <Route path="update/:id" element={<Update />} />
+        <Route path="house" element={<House />} />
+        <Route path="add" element={<Add />} />
+        <Route path="modify/:id" element={<Modify />} />
+
         <Route path="*" element={<Nopage />} />
       </Routes>
     </>

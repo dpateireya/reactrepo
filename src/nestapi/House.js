@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const House = () => {
   const [Apidata, setApidata] = useState([]);
 
   useEffect(() => {
@@ -11,12 +11,10 @@ const Home = () => {
   }, []);
 
   const getData = async () => {
-    console.log(process.env.REACT_APP_JSON_SERVER);
     await axios
-      .get(process.env.REACT_APP_JSON_SERVER)
+      .get(process.env.REACT_APP_NSET_API)
       .then((res) => {
         setApidata(res.data);
-        console.log(res.data);
       })
       .catch((err) => {
         console.log(err);
@@ -30,7 +28,7 @@ const Home = () => {
     const confirm = window.confirm("Do you want to delete?");
     if (confirm) {
       axios
-        .delete(`${process.env.REACT_APP_JSON_SERVER}/${id}`)
+        .delete(`${process.env.REACT_APP_NSET_API}/${id}`)
         .then(() => {
           alert("delete");
           getData();
@@ -40,13 +38,13 @@ const Home = () => {
   };
   return (
     <>
-      <div class="container-sm bg-light w-75 text-center">
-        <h2>CRUD Operation with axios and Json-server </h2>
-        <Link className="btn btn-success" to="/create">
+      <div className="container-sm bg-light w-75 text-center">
+        <h2>CRUD Operation with axios and NEST API-Server </h2>
+        <Link className="btn btn-success" to="/add">
           Create +
         </Link>
 
-        <table class="table table-success table-striped table-hover">
+        <table className="table table-success table-striped table-hover">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -66,7 +64,7 @@ const Home = () => {
                       <td>{item.email}</td>
                       <td>
                         <Link
-                          to={"/update/" + item.id}
+                          to={"/modify/" + item.id}
                           className="btn btn-warning me-1"
                         >
                           Update
@@ -92,4 +90,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default House;

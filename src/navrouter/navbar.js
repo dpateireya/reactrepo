@@ -26,7 +26,7 @@ const Navbar = () => {
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/timer">
-            Timer
+            Timer App
           </Link>
         </li>
         <li className="nav-item">
@@ -47,6 +47,11 @@ const Navbar = () => {
         <li className="nav-item">
           <Link className="nav-link" to="/home">
             CRUD-Operation
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/house">
+            NEST-API
           </Link>
         </li>
       </ul>

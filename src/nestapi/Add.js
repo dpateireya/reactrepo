@@ -1,22 +1,34 @@
 import axios from "axios";
 import { useState } from "react";
 
-const Create = () => {
-  const [inputData, setInputData] = useState({ name: "", email: "" });
+const Add = () => {
+  const [inputData, setInputData] = useState({ id: 0, name: "", email: "" });
 
   const submitHandle = (e) => {
     e.preventDefault();
-    axios.post(process.env.REACT_APP_JSON_SERVER, inputData).then(() => {
+
+    axios.post(process.env.REACT_APP_NSET_API, inputData).then(() => {
       alert("saved");
-      setInputData({ name: "", email: "" });
+      setInputData({ id: 0, name: "", email: "" });
     });
   };
 
   return (
     <>
-      <div class="container bg-light w-25 p-5">
+      <div className="container bg-light w-25 p-5">
         <form onSubmit={submitHandle}>
-          <div class="mb-3">
+          <div className="mb-3">
+            <label className="form-label">ID :</label>
+            <input
+              type="text"
+              className="form-control"
+              value={+inputData.id}
+              onChange={(e) =>
+                setInputData({ ...inputData, id: +e.target.value })
+              }
+            />
+          </div>
+          <div className="mb-3">
             <label className="form-label">Name :</label>
             <input
               type="text"
@@ -27,18 +39,18 @@ const Create = () => {
               }
             />
           </div>
-          <div class="mb-3">
+          <div className="mb-3">
             <label className="form-label">E-Mail :</label>
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               value={inputData.email}
               onChange={(e) =>
                 setInputData({ ...inputData, email: e.target.value })
               }
             />
           </div>
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" className="btn btn-primary">
             Submit
           </button>
         </form>
@@ -47,4 +59,4 @@ const Create = () => {
   );
 };
 
-export default Create;
+export default Add;

@@ -2,26 +2,24 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const Update = () => {
+const Modify = () => {
   const [Apidata, setApidata] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [Apidata]);
 
   const getData = async () => {
-    await axios
-      .get(`${process.env.REACT_APP_JSON_SERVER}/${id}`)
-      .then((res) => {
-        setApidata(res.data);
-      });
+    await axios.get(`${process.env.REACT_APP_NSET_API}/${id}`).then((res) => {
+      setApidata(res.data);
+    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .put(`${process.env.REACT_APP_JSON_SERVER}/${id}`, Apidata)
+      .put(`${process.env.REACT_APP_NSET_API}/${id}`, Apidata)
       .then(() => {
         alert("update");
         setApidata({ name: "", email: "" });
@@ -33,9 +31,9 @@ const Update = () => {
 
   return (
     <>
-      <div class="container bg-light w-25 p-5">
+      <div className="container bg-light w-25 p-5">
         <form onSubmit={handleSubmit}>
-          <div class="mb-3">
+          <div className="mb-3">
             <label className="form-label">Name :</label>
             <input
               type="text"
@@ -44,18 +42,18 @@ const Update = () => {
               onChange={(e) => setApidata({ ...Apidata, name: e.target.value })}
             />
           </div>
-          <div class="mb-3">
+          <div className="mb-3">
             <label className="form-label">E-Mail :</label>
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               value={Apidata.email}
               onChange={(e) =>
                 setApidata({ ...Apidata, email: e.target.value })
               }
             />
           </div>
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" className="btn btn-primary">
             Submit
           </button>
         </form>
@@ -64,4 +62,4 @@ const Update = () => {
   );
 };
 
-export default Update;
+export default Modify;
